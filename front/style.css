@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------------HEADER---------------------- */
+
+header {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 10px;
+    height: 9vh;
+}
+
+#cadastrar {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#cadastrar:hover {
+    background-color: white;
+    color: black;
+}
+
+#flechinha {
+    padding-left: 10px;
+}
+
+/* -------------------MAIN----------------------- */
+
+/* ............section1................ */
+
+.principal {
+    background-color: #070707;
+    height: 15vh;
+    padding: 20px 35px;
+}
+
+#titulo1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#texto1 {
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+/* ............section2................ */
+
+.sobre {
+    height: 330px;
+    padding: 22px;
+    text-align: center;
+}
+
+.sobre img {
+    width: 370px;
+}
+
+#titulo2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 12px 0px;
+    text-align: left;
+}
+
+#texto2 {
+    font-size: 15px;
+    text-align: left;
+}
+
+
+/* ............section3................ */
+
+.cadastro {
+    background-color: #070707;
+    height: 245px;
+    padding-right: 22px;
+
+    display: grid;
+    grid-template-areas: 'img titulo' 'img texto' 'img form';
+    grid-template-columns: 43% 57%;
+    grid-template-rows: 25% 23% 40%;
+}
+
+.cadastro img {
+    grid-area: img;
+    height: 245px;
+}
+
+#titulo3 {
+    grid-area: titulo;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 24px;
+}
+
+#texto3 {
+    grid-area: texto;
+    color: white;
+    font-size: 11px;
+    font-weight: 300;
+    padding-top: 2px;
+}
+
+form {
+    grid-area: form;
+    height: 100px;
+}
+
+#title {
+    font-size: 11px;
+    height: 21px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-size: 11px;
+    height: 21px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#handleSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 0px 6px 0px 8px;
+    width: 40%;
+    gap: 10px;
+    border: 0px solid white;
+    background-color: rgb(17, 114, 179);
+    color: white;
+    transition: all .55s ease;
+}
+
+#handleSubmit:hover {
+    color: white;
+    box-shadow: 0px 0px 2px rgb(11, 71, 110);
+    background-color: rgb(3, 76, 149);
+}
+
+
+/* ............section4................ */
+
+.informações {
+    height: 385px;
+    padding: 22px;
+    text-align: center;
+}
+
+.informações img {
+    width: 370px;
+}
+
+#titulo4 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 12px 0px;
+}
+
+#texto4 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+#texto5 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+/* -----------------FOOTER--------------------- */
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 22px;
+}
+
+.redes_sociais {
+    padding: 0px 22px;
+}
+
+.redes_sociais img {
+    margin-right: 10px;
+}
+
+.instalar_apps {
+    padding: 15px 22px;
+    display: flex;
+    justify-content: start;
+}
+
+.baixar {
+    width: 116px;
+    height: 37px;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin-right: 20px;
+
+    display: grid;
+    grid-template-areas: 'img texto' 'img app';
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 40% 60%;
+}
+
+#google {
+    grid-area: img;
+    margin: 6px;
+}
+
+#apple {
+    grid-area: img;
+    margin: 5px;
+}
+
+#textinho {
+    grid-area: texto;
+    color: white;
+    font-size: 7px;
+    padding: 5px 0px 0px 3px;
+}
+
+#app {
+    grid-area: app;
+    color: white;
+    font-size: 12px;
+    padding: 0px 0px 7px 3px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#copy {
+    font-size: 10px;
+    padding: 0px 0px 15px 22px;
+}
+
+/* ------------------MOBILE tablet-------------------- */
+
+@media screen and (min-width: 550px) and (max-width: 770px) {
+
+    /* ----------------HEADER------------------- */
+
+    header {
+        padding: 0 20px 0 10px;
+        height: 12vh;
+    }
+
+    header img {
+        width: 35vw;
+    }
+
+    #cadastrar {
+        padding: 13px 25px;
+        border: 2px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 21px;
+        text-decoration: none;
+    }
+
+    #flechinha {
+        padding-left: 13px;
+    }
+
+    /* ----------------MAIN------------------- */
+
+    /* ............section1................ */
+
+    .principal {
+        height: 19vh;
+        padding: 20px 35px;
+    }
+
+    #titulo1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #texto1 {
+        font-size: 21px;
+    }
+
+    /* ............section2................ */
+
+    .sobre {
+        height: 410px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .sobre img {
+        width: 480px;
+    }
+
+    #titulo2 {
+        font-size: 37px;
+        margin: 12px 0px;
+        text-align: left;
+    }
+
+    #texto2 {
+        font-size: 19px;
+        text-align: left;
+    }
+
+    /* ............section3................ */
+
+    .cadastro {
+        height: 300px;
+        padding-right: 22px;
+    }
+
+    .cadastro img {
+        height: 300px;
+    }
+
+    #titulo3 {
+        font-size: 31px;
+        padding-top: 35px;
+    }
+
+    #texto3 {
+        font-size: 15px;
+        padding-top: 7px;
+    }
+
+    form {
+        height: 100px;
+    }
+
+    #title {
+        font-size: 15px;
+        height: 28px;
+        width: 290px;
+        margin-top: 8px;
+    }
+
+    #description {
+        font-size: 15px;
+        height: 28px;
+        width: 290px;
+    }
+
+    #handleSubmit {
+        font-size: 15px;
+        height: 32px;
+        width: 145px;
+        padding: 0px 6px 0px 8px;
+    }
+
+    /* ............section4................ */
+
+    .informações {
+        height: 465px;
+    }
+
+    .informações img {
+        width: 470px;
+    }
+
+    #titulo4 {
+        font-size: 37px;
+    }
+
+    #texto4 {
+        font-size: 19px;
+    }
+
+    #texto5 {
+        font-size: 19px;
+    }
+
+    /* -----------------FOOTER--------------------- */
+
+    #suber_footer {
+        width: 220px;
+    }
+
+    .redes_sociais {
+        padding: 0px 35px;
+    }
+
+    .redes_sociais img {
+        width: 30px;
+    }
+
+    .instalar_apps {
+        padding: 15px 35px;
+    }
+
+    .baixar {
+        width: 148px;
+        height: 42px;
+    }
+
+    .baixar img {
+        width: 26px;
+    }
+
+    #google {
+        margin: 7px;
+    }
+
+    #textinho {
+        font-size: 9px;
+    }
+
+    #app {
+        font-size: 15px;
+    }
+
+    #copy {
+        font-size: 16px;
+        padding: 0px 0px 15px 35px;
+    }
+}
+
+/* ------------------computador-------------------- */
+
+@media screen and (min-width: 771px) and (max-width: 1200px) {
+
+    /* ----------------HEADER------------------- */
+
+    header {
+        padding: 0 20px 0 10px;
+        height: 12vh;
+    }
+
+    header img {
+        width: 35vw;
+    }
+
+    #cadastrar {
+        padding: 13px 25px;
+        border: 2px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 21px;
+        text-decoration: none;
+    }
+
+    #flechinha {
+        padding-left: 13px;
+    }
+
+    /* ----------------MAIN------------------- */
+
+    /* ............section1................ */
+
+    .principal {
+        height: 19vh;
+        padding: 20px 35px;
+    }
+
+    #titulo1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #texto1 {
+        font-size: 21px;
+    }
+
+    /* ............section2................ */
+
+    .sobre {
+        height: 410px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .sobre img {
+        width: 480px;
+    }
+
+    #titulo2 {
+        font-size: 37px;
+        margin: 12px 0px;
+        text-align: left;
+    }
+
+    #texto2 {
+        font-size: 19px;
+        text-align: left;
+    }
+
+    /* ............section3................ */
+
+    .cadastro {
+        height: 300px;
+        padding-right: 22px;
+    }
+
+    .cadastro img {
+        height: 300px;
+    }
+
+    #titulo3 {
+        font-size: 31px;
+        padding-top: 35px;
+    }
+
+    #texto3 {
+        font-size: 15px;
+        padding-top: 7px;
+    }
+
+    form {
+        height: 100px;
+    }
+
+    #title {
+        font-size: 15px;
+        height: 28px;
+        width: 290px;
+        margin-top: 8px;
+    }
+
+    #description {
+        font-size: 15px;
+        height: 28px;
+        width: 290px;
+    }
+
+    #handleSubmit {
+        font-size: 15px;
+        height: 32px;
+        width: 145px;
+        padding: 0px 6px 0px 8px;
+    }
+
+    /* ............section4................ */
+
+    .informações {
+        height: 465px;
+    }
+
+    .informações img {
+        width: 470px;
+    }
+
+    #titulo4 {
+        font-size: 37px;
+    }
+
+    #texto4 {
+        font-size: 19px;
+    }
+
+    #texto5 {
+        font-size: 19px;
+    }
+
+    /* -----------------FOOTER--------------------- */
+
+    #suber_footer {
+        width: 220px;
+    }
+
+    .redes_sociais {
+        padding: 0px 35px;
+    }
+
+    .redes_sociais img {
+        width: 30px;
+    }
+
+    .instalar_apps {
+        padding: 15px 35px;
+    }
+
+    .baixar {
+        width: 148px;
+        height: 42px;
+    }
+
+    .baixar img {
+        width: 26px;
+    }
+
+    #google {
+        margin: 7px;
+    }
+
+    #textinho {
+        font-size: 9px;
+    }
+
+    #app {
+        font-size: 15px;
+    }
+
+    #copy {
+        font-size: 16px;
+        padding: 0px 0px 15px 35px;
+    }
+}
